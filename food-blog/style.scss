@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    img {
+    width: 80px;
+    padding-left: 10px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        gap: 20px;
+
+        a {           
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px 0 5px 0;
+    margin-bottom: 5px;
+    list-style-type: none;
+    font-weight: bold;
+   
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+// The images on the index file
+
+.big {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 30px;
+    width: 75%;
+
+    div {
+        position: relative;
+    }
+
+    p {
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(19, 19, 19, 0.752);
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+// Hero section at the recipe of the month
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: aliceblue;
+    
+    background-image: url("recipe.jpeg");
+    background-size:  100%;
+    background-repeat: no-repeat;
+    height: 40vh;
+
+}
+
+.my-recipe {
+    padding: 10px;
+
+    #step-1 {
+        padding-left: 15px;
+    }
+
+    #step-2 {
+        padding-left: 15px;
+    }
+
+    #step-3 {
+        padding-left: 15px;
+    }
+
+    h3 {
+        padding: 20px 0px;
+    }
+
+    .description {
+        padding: 20px 0px;
+    }
+
+    .info {
+        display: flex;
+        justify-items: center;
+        gap: 30px;
+    }
+}
+
+// About file
+
+.bg {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+   
+    .mission {
+        width: 100%;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+// Footer
+
+footer {
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+
+    .links {
+        padding-top: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    span {
+        color: whitesmoke;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        gap: 20px;
+        color: whitesmoke;
+    }
+    .copyright {
+        text-align: center;
+        color: whitesmoke;
+        padding-bottom: 10px;
+    }
+}
+
+// Media query
+
+@media screen and (width < 821px) {
+    .container {
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+}
+
+@media screen and (width < 501px) {
+    .container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .bg {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
