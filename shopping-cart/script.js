@@ -28,7 +28,7 @@ const fruits = [{
 
 fruits.forEach(function(Val){
     document.getElementById("result").innerHTML +=`
-    <div class="container p-2">
+    <div class="container">
         <div><img src="${Val.image}" width="200" height="160"></div>
         <p>${Val.name}</p>
         <p>${Val.price}€</p>
@@ -90,9 +90,9 @@ function createCartInHTML(){
 
     cart.forEach(function(Val){
         document.getElementById("cart").innerHTML += `
-        <tr class="">
+        <tr>
             <td>${Val.name}</td> 
-            <td><div><img src="${Val.image}" width="80" height="60"></div></td>
+            <td><div><img src="${Val.image}" width="100" height="60"></div></td>
             <td><button class="btn btn-primary minus"> - </button></td>
             <td><div class="qtty">${Val.qtty}</div></td> 
             <td><button class="btn btn-primary plus"> + </button></td>
